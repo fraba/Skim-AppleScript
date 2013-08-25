@@ -1,3 +1,9 @@
+(* AppleScript to add highlights to PDF from text
+
+The script requires an input file with one highlight on each line
+
+*)
+
 --Watch out for problematic characters, such as the dash character. You might need to replace them before processing the text
 
 -- Set Variables
@@ -13,7 +19,7 @@ set theFile to (choose file with prompt "Select file with annotations:" of type 
 open for access theFile
 
 -- Set encoding to utf8 (Change if necessary)
-set fileContent to (read theFile as Â«class utf8Â»)
+set fileContent to (read theFile as Çclass utf8È)
 
 close access theFile
 
