@@ -13,7 +13,7 @@ set theFile to (choose file with prompt "Select file with annotations:" of type 
 open for access theFile
 
 -- Set encoding to utf8 (Change if necessary)
-set fileContent to (read theFile as Çclass utf8È)
+set fileContent to (read theFile as Â«class utf8Â»
 
 close access theFile
 
